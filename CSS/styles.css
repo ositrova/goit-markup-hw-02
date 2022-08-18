@@ -1,64 +1,209 @@
-.navigation {}
+:root {
+    /* Fonts */
+    --main-font:'Roboto';
+    --secondary-font:'Raleway'; 
 
-.logo {}
+    /* Text colors */
+    --main-txt-cl: #212121;
+    --light-txt-cl: #757575;
+    --accent-txt-cl: #2196F3;
+    --second-txt-cl: #FFFFFF;
+    --footer-link-txt-cl: rgba(255, 255, 255, 0.6);
 
-.nav-list {}
+    /* Background colors */
+    --accent-bg-cl: #2F303A;
 
-.nav-item {}
+    /* Others */
+}
+.page {
+    font-family: var(--main-font);
+    color: var(--main-txt-cl);
+    width: 1600px;
+}
 
-.nav-contact {}
+/*Header*/
 
-.hero {}
+.navigation {
+    background: var(--second-txt-cl)
+   color: currentColor;
+}
+.link {
+    text-decoration: none;
+        color: currentColor;
+    
+}
+.link:hover,
+.link:focus {
+    color: var(--accent-txt-cl);
+}
 
-.hero-title {}
 
-.hero-btn {}
+.logo {
+    font-family: var(--secondary-font);
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        letter-spacing: 0.03em;
+color: #000000;
+}
 
+.logo-part {
+        color: var(--accent-txt-cl);
+}
+
+.list {
+list-style: none;
+}
+
+.nav-item {
+    font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        color: var(--main-txt-cl);
+ 
+}
+
+.nav-contact {
+    font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        color: var(--light-txt-cl);
+        
+}
+
+/*Section 1 (шапка)*/
+
+.hero {
+    background-color: var(--accent-bg-cl);
+}
+
+.hero-title {
+    font-weight: 900;
+        font-size: 44px;
+        line-height: 60px;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    
+        color: var(--second-txt-cl);
+}
+
+.hero-btn {
+    font-family: inherit;
+    font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: var(--second-txt-cl);
+        background-color: var(--accent-txt-cl);
+}
+
+/*Section 2 (особливості)*/
 .feature {}
 
 .feature-headline {}
 
-.feature-list {}
-
 .feature-item {}
 
-.feature-title {}
+.feature-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--main-txt-cl);
+}
 
-.feature-text {}
+.feature-text {
+    font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: var(--light-txt-cl);
+}
+
+/*чим ми займаємося*/
 
 .outer {}
 
-.outer-title {}
-
-.outer-list {}
+.outer-title {
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--main-txt-cl);
+}
 
 .outer-item {}
 
+/*Команда*/
+
 .team {}
 
-.team-title {}
-
-.team-list {}
+.team-title {
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.03em;
+    
+        color:var(--main-txt-cl);
+}
 
 .team-item {}
 
 .team-img {}
 
-.team-name {}
+.team-name {
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.03em;
+    color: var(--main-txt-cl);
+}
 
-.team-text {}
+.team-text {
+    font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color:var(--light-txt-cl);
+}
 
-.footer {}
+/*Footer (подвал)*/
 
-.footer-logo {}
+.footer {
+    background-color: var(--accent-bg-cl);
+    
+}
+.footer-contact {
+    color: var(--footer-link-txt-cl);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+.footer-text{
+    font-style: normal;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: var(--second-txt-cl);
+}
 
-.footer-contact {}
+.footer-item {
+font-style: normal;
+}
 
-.footer-list {}
-
-.footer-item {}
 
 /*Partfolio*/
+
 
 .partfolio-list {}
 
@@ -72,3 +217,4 @@
 
 .partfolio-work-text {}
 
+ 
