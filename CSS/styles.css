@@ -1,220 +1,262 @@
 :root {
-    /* Fonts */
-    --main-font:'Roboto';
-    --secondary-font:'Raleway'; 
+  /* Fonts */
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
 
-    /* Text colors */
-    --main-txt-cl: #212121;
-    --light-txt-cl: #757575;
-    --accent-txt-cl: #2196F3;
-    --second-txt-cl: #FFFFFF;
-    --footer-link-txt-cl: rgba(255, 255, 255, 0.6);
+  /* Text colors */
+  --main-txt-cl: #212121;
+  --light-txt-cl: #757575;
+  --accent-txt-cl: #2196f3;
+  --second-txt-cl: #ffffff;
+  --footer-link-txt-cl: rgba(255, 255, 255, 0.6);
 
-    /* Background colors */
-    --accent-bg-cl: #2F303A;
+  /* Background colors */
+  --accent-bg-cl: #2f303a;
+  --bg-cl: #f5f5f5;
+  --second-bg-cl: #f5f4fa;
 
-    /* Others */
+  /* Others */
 }
 .page {
-    font-family: var(--main-font);
-    color: var(--main-txt-cl);
-    width: 1600px;
+  font-family: var(--main-font);
+  color: var(--main-txt-cl);
+  width: 1600px;
+  background: var(--bg-cl);
 }
 
 /*Header*/
-
+.header {
+  background: var(--second-txt-cl);
+  color: currentColor;
+}
 .navigation {
-    background: var(--second-txt-cl)
-   color: currentColor;
 }
-.link {
-    text-decoration: none;
-        color: currentColor;
-    
-}
-.link:hover,
-.link:focus {
-    color: var(--accent-txt-cl);
-}
-
 
 .logo {
-    font-family: var(--secondary-font);
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 31px;
-        letter-spacing: 0.03em;
-color: #000000;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #000000;
 }
 
 .logo-part {
-        color: var(--accent-txt-cl);
+  color: var(--accent-txt-cl);
 }
 
 .list {
-list-style: none;
+  list-style: none;
 }
 
 .nav-item {
-    font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.02em;
-        color: var(--main-txt-cl);
- 
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--main-txt-cl);
 }
 
 .nav-contact {
-    font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.02em;
-        color: var(--light-txt-cl);
-        
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--light-txt-cl);
+}
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-txt-cl);
 }
 
 /*Section 1 (шапка)*/
 
 .hero {
-    background-color: var(--accent-bg-cl);
+  background-color: var(--accent-bg-cl);
 }
 
 .hero-title {
-    font-weight: 900;
-        font-size: 44px;
-        line-height: 60px;
-        text-align: center;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-    
-        color: var(--second-txt-cl);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--second-txt-cl);
 }
 
 .hero-btn {
-    font-family: inherit;
-    font-weight: 700;
-        font-size: 16px;
-        line-height: 30px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        letter-spacing: 0.06em;
-        color: var(--second-txt-cl);
-        background-color: var(--accent-txt-cl);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+  color: var(--second-txt-cl);
+  background-color: var(--accent-txt-cl);
 }
 
 /*Section 2 (особливості)*/
-.feature {}
+.feature {
+}
 
-.feature-headline {}
+.feature-headline {
+}
 
-.feature-item {}
+.feature-item {
+}
 
 .feature-title {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: var(--main-txt-cl);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-txt-cl);
 }
 
 .feature-text {
-    font-size: 14px;
-        line-height: 24px;
-        letter-spacing: 0.03em;
-        color: var(--light-txt-cl);
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--light-txt-cl);
 }
 
 /*чим ми займаємося*/
 
-.outer {}
-
-.outer-title {
-    font-weight: 700;
-        font-size: 36px;
-        line-height: 42px;
-        text-align: center;
-        letter-spacing: 0.03em;
-        color: var(--main-txt-cl);
+.outer {
 }
 
-.outer-item {}
+.outer-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-txt-cl);
+}
+
+.outer-item {
+}
 
 /*Команда*/
 
-.team {}
-
-.team-title {
-    font-weight: 700;
-        font-size: 36px;
-        line-height: 42px;
-        text-align: center;
-        letter-spacing: 0.03em;
-    
-        color:var(--main-txt-cl);
+.team {
+  background: var(--second-bg-cl);
 }
 
-.team-item {}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
 
-.team-img {}
+  color: var(--main-txt-cl);
+}
+
+.team-item {
+  background-color: var(--second-txt-cl);
+}
+
+.team-img {
+}
 
 .team-name {
-    font-weight: 500;
-        font-size: 16px;
-        line-height: 19px;
-        text-align: center;
-        letter-spacing: 0.03em;
-    color: var(--main-txt-cl);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-txt-cl);
 }
 
 .team-text {
-    font-size: 16px;
-        line-height: 19px;
-        text-align: center;
-        letter-spacing: 0.03em;
-        color:var(--light-txt-cl);
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--light-txt-cl);
 }
 
-/*Footer (подвал)*/
+/*Footer */
 
 .footer {
-    background-color: var(--accent-bg-cl);
-    
+  background-color: var(--accent-bg-cl);
+}
+.footer-logo-part {
+  color: var(--second-txt-cl);
 }
 .footer-contact {
-    color: var(--footer-link-txt-cl);
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
+  color: var(--footer-link-txt-cl);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
 }
-.footer-text{
-    font-style: normal;
-        font-size: 14px;
-        line-height: 24px;
-        letter-spacing: 0.03em;
-        color: var(--second-txt-cl);
+.footer-text {
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--second-txt-cl);
 }
 
 .footer-item {
-font-style: normal;
+  font-style: normal;
 }
-
 
 /*Partfolio*/
 
+.partfolio-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
 
-.partfolio-list {}
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: var(--second-bg-cl);
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 
-.partfolio-btn {}
+.partfolio-btn:hover,
+.partfolio-btn:focus {
+  color: var(--second-txt-cl);
+  background: var(--accent-txt-cl);
+}
+.partfolio-work {
+}
 
-.partfolio-work-list {}
+.partfolio-work-img {
+}
 
-.partfolio-work-img {}
+.partfolio-work-item {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--main-txt-cl);
+}
 
-.partfolio-work-item {}
-
-.partfolio-work-text {}
-
- 
+.partfolio-work-text {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+  color: var(--light-txt-cl);
+}
