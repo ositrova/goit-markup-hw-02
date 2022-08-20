@@ -20,7 +20,6 @@
 .page {
   font-family: var(--main-font);
   color: var(--main-txt-cl);
-  width: 1600px;
   background: var(--bg-cl);
 }
 
@@ -29,8 +28,8 @@
   background: var(--second-txt-cl);
   color: currentColor;
 }
-.navigation {
-}
+/*.navigation {
+}*/
 
 .logo {
   font-family: var(--secondary-font);
@@ -71,7 +70,8 @@
 }
 
 .link:hover,
-.link:focus {
+.link:focus,
+.link:active {
   color: var(--accent-txt-cl);
 }
 
@@ -104,17 +104,19 @@
   letter-spacing: 0.06em;
   color: var(--second-txt-cl);
   background-color: var(--accent-txt-cl);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
 }
 
 /*Section 2 (особливості)*/
-.feature {
+/*.feature {
 }
 
 .feature-headline {
 }
 
 .feature-item {
-}
+}*/
 
 .feature-title {
   font-weight: 700;
@@ -135,6 +137,7 @@
 /*чим ми займаємося*/
 
 .outer {
+    background-color: var(--bg-cl);
 }
 
 .outer-title {
@@ -146,8 +149,8 @@
   color: var(--main-txt-cl);
 }
 
-.outer-item {
-}
+/*.outer-item {
+}*/
 
 /*Команда*/
 
@@ -169,8 +172,8 @@
   background-color: var(--second-txt-cl);
 }
 
-.team-img {
-}
+/*.team-img {
+}*/
 
 .team-name {
   font-weight: 500;
@@ -199,13 +202,13 @@
 }
 .footer-contact {
   color: var(--footer-link-txt-cl);
+  font-style: normal;
   text-decoration: none;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 }
 .footer-text {
-  font-style: normal;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -240,11 +243,11 @@
   color: var(--second-txt-cl);
   background: var(--accent-txt-cl);
 }
-.partfolio-work {
+/*.partfolio-work {
 }
 
 .partfolio-work-img {
-}
+}*/
 
 .partfolio-work-item {
   font-weight: 700;
