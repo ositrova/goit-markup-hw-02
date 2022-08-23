@@ -231,6 +231,7 @@
   text-align: center;
   letter-spacing: 0.03em;
   background-color: var(--second-bg-cl);
+  border: none;
 }
 
 .partfolio-btn:hover,
