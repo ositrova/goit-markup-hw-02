@@ -21,7 +21,7 @@
 .page {
   font-family: var(--main-font);
   color: var(--main-txt-cl);
-  background: var(--second-txt-cl-cl);
+  background: var(--second-txt-cl);
 }
 
 /*Header*/
